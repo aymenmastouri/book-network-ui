@@ -1,3 +1,11 @@
+# BookNetwork UI
+
+The Angular client of BookNetwork, in its own repository. The API and the shared
+infrastructure (`docker compose up -d`) live in the sibling `booknetwork-api` repository;
+this client expects the API at http://localhost:8088/api/v1 and serves on
+http://localhost:4201 (`npm ci && npm start`). The Playwright end-to-end suite is under
+`e2e/` (`cd e2e && npm ci && npx playwright install chromium && npm test`).
+
 # Web
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.27.
