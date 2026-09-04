@@ -36,6 +36,7 @@
   },
   "book": {
     "borrow": "Borrow",
+    "borrowCount": "Borrowed",
     "reserve": "Reserve",
     "cancelReservation": "Leave queue",
     "reservedByMe": "In queue",

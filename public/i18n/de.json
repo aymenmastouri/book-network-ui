@@ -36,6 +36,7 @@
   },
   "book": {
     "borrow": "Ausleihen",
+    "borrowCount": "Ausgeliehen",
     "reserve": "Reservieren",
     "cancelReservation": "Schlange verlassen",
     "reservedByMe": "In der Schlange",

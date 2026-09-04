@@ -77,6 +77,7 @@ import { ToastService } from '../shared/toast.service';
           <div>
             <h1 class="font-display text-3xl font-semibold">{{ b.title }}</h1>
             <p class="mt-1 text-lg text-ink-soft">{{ b.authorName }}</p>
+            <p class="book-borrow-count" data-testid="book-borrow-count"><span transloco="book.borrowCount">Borrowed</span> {{ b.borrowCount ?? 0 }}</p>
             <div class="mt-2 flex flex-wrap items-center gap-3 text-sm text-ink-soft">
               <bn-star-rating [value]="b.rating ?? 0" />
               <span class="rounded-full bg-shelf px-2 py-0.5 text-xs">{{ t('genres.' + b.genre) }}</span>
