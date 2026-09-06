@@ -6,6 +6,7 @@ export interface BookResponse {
   authorName?: string;
   borrowed?: boolean;
   borrowedByMe?: boolean;
+  borrowCount?: number;
   genre?: 'CLASSIC' | 'CRIME' | 'SCIFI' | 'FANTASY' | 'ROMANCE' | 'HISTORY' | 'NONFICTION' | 'OTHER';
   hasCover?: boolean;
   id?: number;
