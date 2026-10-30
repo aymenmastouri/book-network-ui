@@ -45,7 +45,7 @@ This will compile your project and store the build artifacts in the `dist/` dire
 
 ## Running unit tests
 
-Unit tests run with [Karma](https://karma-runner.github.io) and Jasmine in headless Chrome, once, without watching:
+Unit tests run with [Jest](https://jestjs.io) and `jest-preset-angular` in Node with jsdom, so no browser has to start:
 
 ```bash
 npm test                                                  # every spec
@@ -54,7 +54,8 @@ npm run test:coverage                                     # every spec, with cov
 ```
 
 The coverage report is LCOV at `coverage/booknetwork-ui/lcov.info`. A spec lives
-next to the file it tests, named `<file>.spec.ts`.
+next to the file it tests, named `<file>.spec.ts`; `jest.config.js` and
+`setup-jest.ts` hold the configuration.
 
 ## Running end-to-end tests
 
