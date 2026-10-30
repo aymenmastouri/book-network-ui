@@ -45,11 +45,16 @@ This will compile your project and store the build artifacts in the `dist/` dire
 
 ## Running unit tests
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Unit tests run with [Karma](https://karma-runner.github.io) and Jasmine in headless Chrome, once, without watching:
 
 ```bash
-ng test
+npm test                                                  # every spec
+npm run test:one -- src/app/shared/toast.service.spec.ts  # one spec file
+npm run test:coverage                                     # every spec, with coverage
 ```
+
+The coverage report is LCOV at `coverage/booknetwork-ui/lcov.info`. A spec lives
+next to the file it tests, named `<file>.spec.ts`.
 
 ## Running end-to-end tests
 
