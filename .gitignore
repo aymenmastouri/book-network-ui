@@ -10,3 +10,6 @@ data/
 .vscode/
 test-results/
 playwright-report/
+
+# unit-test coverage reports
+coverage/
